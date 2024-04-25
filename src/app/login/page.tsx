@@ -15,7 +15,7 @@ export default function Login() {
                 <div className="bg-vr-100 w-10/12 h-28 rounded-r-full">
                   <div className="md:pl-40 p-4">
                     <Image src={LoginLogo} alt="AI ARTS" className="pl-0 w-40" />
-                    <h4 className="text-white">World's First All-in-One A I Marketplace</h4>
+                    <h4 className="text-white">World&apos;s First All-in-One A I Marketplace</h4>
                   </div>
                 </div>
               </div>
