@@ -9,10 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+        'deskbg' : "url('../assets/img/Group 8797.png')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          
       },
+      // backgroundImage: (theme) => ({
+      //   deskbg: "url('../assets/img/landing-1-bg.png')",
+      // }),
     },
   },
   plugins: [],
