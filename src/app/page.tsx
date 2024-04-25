@@ -27,7 +27,7 @@ export default function Home() {
         <section>
           <Image src={Bg1} alt="landing Image" className="w-full" />
         </section>
-        <section className="w-full mt-10">
+        <section className="w-full mt-5 px-2 px-auto">
           <div className=" md:px-32 mx-auto">
             <div className="flex">
               <h4 className="mr-auto font-bold">Trending Products</h4>
@@ -100,7 +100,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full mt-10">
+        <section className="w-full mt-5 px-2 px-auto">
           <div className=" md:px-32 mx-auto">
             <div className="flex">
               <h4 className="mr-auto font-bold">Free Course</h4>
@@ -187,7 +187,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full mt-10">
+        <section className="w-full mt-5 px-2 px-auto">
           <div className=" md:px-32 mx-auto">
             <div className="flex">
               <h4 className="mr-auto font-bold">Top Creators</h4>
@@ -276,7 +276,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full mt-10">
+        <section className="w-full mt-5 px-2 px-auto">
           <div className=" md:px-32 mx-auto">
             <div className="flex">
               <h4 className="mr-auto font-bold">Get High Quality latest courses</h4>
