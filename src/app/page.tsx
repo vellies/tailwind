@@ -276,6 +276,88 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="w-full mt-10">
+          <div className=" md:px-32 mx-auto">
+            <div className="flex">
+              <h4 className="mr-auto font-bold">Get High Quality latest courses</h4>
+              <h6 className="flex ml-auto text-blue-500">View All
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </span>
+              </h6>
+            </div>
+            <h6 className="text-gray-400">Learn latest trending course from industry leading mentors</h6>
+            <div className="md:flex flex-row my-3">
+              <div className="md:w-1/5 pr-1">
+                <Image src={GamingScholarships1} alt="gaming-scholarships-esports-scholarships" className="w-full" />
+                <p className="pt-2">Introduction to Corporate Finance</p>
+                <p className="text-gray-400 text-sm">The corporate finance course course is taught hands-on by experts.</p>
+                <div className="flex flex-row my-2">
+                  <span className="text-teal-400">$75</span>
+                  <span className="flex flex-row ml-auto pr-2">
+                  <span className="text-teal-400">
+                    <span className="inline-flex items-center rounded-md bg-blue-600 px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-indigo-700/10">Buy Now</span>
+                  </span>
+                  </span>
+                </div>
+              </div>
+              <div className="md:w-1/5 pr-1">
+                <Image src={GamingScholarships1} alt="gaming-scholarships-esports-scholarships" className="w-full" />
+                <p className="pt-2">Introduction to Corporate Finance</p>
+                <p className="text-gray-400 text-sm">The corporate finance course course is taught hands-on by experts.</p>
+                <div className="flex flex-row my-2">
+                  <span className="text-teal-400">$75</span>
+                  <span className="flex flex-row ml-auto pr-2">
+                  <span className="text-teal-400">
+                    <span className="inline-flex items-center rounded-md bg-blue-600 px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-indigo-700/10">Buy Now</span>
+                  </span>
+                  </span>
+                </div>
+              </div>
+              <div className="md:w-1/5 pr-1">
+                <Image src={GamingScholarships1} alt="gaming-scholarships-esports-scholarships" className="w-full" />
+                <p className="pt-2">Introduction to Corporate Finance</p>
+                <p className="text-gray-400 text-sm">The corporate finance course course is taught hands-on by experts.</p>
+                <div className="flex flex-row my-2">
+                  <span className="text-teal-400">$75</span>
+                  <span className="flex flex-row ml-auto pr-2">
+                  <span className="text-teal-400">
+                    <span className="inline-flex items-center rounded-md bg-blue-600 px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-indigo-700/10">Buy Now</span>
+                  </span>
+                  </span>
+                </div>
+              </div>
+              <div className="md:w-1/5 pr-1">
+                <Image src={GamingScholarships1} alt="gaming-scholarships-esports-scholarships" className="w-full" />
+                <p className="pt-2">Introduction to Corporate Finance</p>
+                <p className="text-gray-400 text-sm">The corporate finance course course is taught hands-on by experts.</p>
+                <div className="flex flex-row my-2">
+                  <span className="text-teal-400">$75</span>
+                  <span className="flex flex-row ml-auto pr-2">
+                  <span className="text-teal-400">
+                    <span className="inline-flex items-center rounded-md bg-blue-600 px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-indigo-700/10">Buy Now</span>
+                  </span>
+                  </span>
+                </div>
+              </div>
+              <div className="md:w-1/5 pr-1">
+                <Image src={GamingScholarships1} alt="gaming-scholarships-esports-scholarships" className="w-full" />
+                <p className="pt-2">Introduction to Corporate Finance</p>
+                <p className="text-gray-400 text-sm">The corporate finance course course is taught hands-on by experts.</p>
+                <div className="flex flex-row my-2">
+                  <span className="text-teal-400">$75</span>
+                  <span className="flex flex-row ml-auto pr-2">
+                  <span className="text-teal-400">
+                    <span className="inline-flex items-center rounded-md bg-blue-600 px-2 py-1 text-xs font-medium text-white ring-1 ring-inset ring-indigo-700/10">Buy Now</span>
+                  </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );
