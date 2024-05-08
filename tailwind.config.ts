@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
       colors: {
         vr: { 100: "rgb(89 113 98 / 69%)" },
         border: "hsl(var(--border))",

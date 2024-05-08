@@ -19,11 +19,13 @@ import BeautifulGirl5 from "@@/assets/img/beautiful-girl5.png"
 import BeautifulGirl6 from "@@/assets/img/beautiful-girl6.png"
 import BeautifulGirl7 from "@@/assets/img/beautiful-girl7.png"
 import BeautifulGirl8 from "@@/assets/img/beautiful-girl.png"
+import HH from "@@/app/header/page"
 
 export default function Home() {
   return (
     <>
       <div>
+<HH />
         <section>
           <Image src={Bg1} alt="landing Image" className="w-full" />
         </section>
