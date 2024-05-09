@@ -217,8 +217,50 @@ export default function LinkedIn() {
 
     useEffect(() => {
         console.log(1111111)
-        getLinkedInJob()
+        // getLinkedInJob()
+        getNaukriJob()
     }, [data]);
+
+    const getNaukriJob = async () => {
+        await axios.get(
+            'https://www.naukri.com/jobapi/v3/search?noOfResults=20&urlType=search_by_key_loc&searchType=adv&location=coimbatore&keyword=blockchain%20developer&pageNo=1&experience=5&k=blockchain%20developer&l=coimbatore&experience=5&nignbevent_src=jobsearchDeskGNB&seoKey=blockchain-developer-jobs-in-coimbatore&src=jobsearchDesk&latLong=',
+           
+            {
+                headers: {
+                    'authority':'www.naukri.com',
+                    'method':'GET',
+                    'path':'/jobapi/v3/search?noOfResults=20&urlType=search_by_key_loc&searchType=adv&location=coimbatore&keyword=blockchain%20developer&pageNo=1&experience=5&k=blockchain%20developer&l=coimbatore&experience=5&nignbevent_src=jobsearchDeskGNB&seoKey=blockchain-developer-jobs-in-coimbatore&src=jobsearchDesk&latLong=',
+                    'scheme':'https',
+                    'Accept':'application/json',
+                    'Accept-Encoding':'gzip, deflate, br, zstd',
+                    'Accept-Language':'en-US,en;q=0.9,ta;q=0.8',
+                    'Appid':'109',
+                    'Authorization':'Bearer eyJraWQiOiIxIiwidHlwIjoiSldUIiwiYWxnIjoiUlM1MTIifQ.eyJkZXZpY2VUeXBlIjoiZDNza3QwcCIsInVkX3Jlc0lkIjoyNjg1ODQ0NTQsInN1YiI6IjI3OTYzNjMyOCIsInVkX3VzZXJuYW1lIjoidmVsbGllc0B5b3BtYWlsLmNvbSIsInVkX2lzRW1haWwiOnRydWUsImlzcyI6IkluZm9FZGdlIEluZGlhIFB2dC4gTHRkLiIsInVzZXJBZ2VudCI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMjQuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImlwQWRyZXNzIjoiMTcyLjEwLjIyMS45NSIsInVkX2lzVGVjaE9wc0xvZ2luIjpmYWxzZSwidXNlcklkIjoyNzk2MzYzMjgsInN1YlVzZXJUeXBlIjoiam9ic2Vla2VyIiwidXNlclN0YXRlIjoiQVVUSEVOVElDQVRFRCIsInVkX2lzUGFpZENsaWVudCI6ZmFsc2UsInVkX2VtYWlsVmVyaWZpZWQiOmZhbHNlLCJ1c2VyVHlwZSI6ImpvYnNlZWtlciIsInNlc3Npb25TdGF0VGltZSI6IjIwMjQtMDUtMDlUMDc6MzQ6MTEiLCJ1ZF9lbWFpbCI6InZlbGxpZXNAeW9wbWFpbC5jb20iLCJ1c2VyUm9sZSI6InVzZXIiLCJleHAiOjE3MTUyMjM4NTEsInRva2VuVHlwZSI6ImFjY2Vzc1Rva2VuIiwiaWF0IjoxNzE1MjIwMjUxLCJqdGkiOiJkYzFhOWQzYzEwM2Y0MzE3OTlmNDQzMGI0NjdmNGNlNiJ9.bFQQfF9hvc08P7JSb5Nn3KYOlz6Ai2W4rf3V_pbTq3x7445G-1UwSETrAIQAmiArz15F3r_PHOCxMvmcAbXXz2vwtOylxucytfx6ZrXu6DWkVDkQlyFtJ3-S0YYSxro8Llvr-XSgoljJDoCpYA2p9I2Vm8m_9bMI0h5qJIqzTIs2kiOWt_MiqYYVtbeEvpfuYdlZIhl61_s6g2rxsI83F1HsqVxIy06wZ3pebJ1oXspubP8C4Pu62UNDvnsqvNyvPqTfpvaMbvk2BlxrWvfOWurqsrYEv6T4O2gPqJoby7UT0ajaSQYO9EM1aFxaIFkKqn5FGrVX7E8hkbD9jyC2QA',
+                    'Clientid':'d3skt0p',
+                    'Content-Type':'application/json',
+                    'Cookie':'_t_s=direct; _t_ds=168c59e91705992175-167168c59e9-0168c59e9; _t_us=18D350ECD03; test=naukri.com; _t_ds=168c59e91705992175-167168c59e9-0168c59e9; __gads=ID=69a2ed718a4e0a71:T=1705992188:RT=1705992188:S=ALNI_MbSL42jk2irPKEcYq3DobDzaHnOEA; __gpi=UID=00000cee052b412f:T=1705992188:RT=1705992188:S=ALNI_MY7wYkJjZN_3xd26EfKWqItQnL6gw; J=0; _gac_UA-120365439-1=1.1714634579.CjwKCAjw88yxBhBWEiwA7cm6pYl4MaqPsuJhUCbq9S-onwCZSv7vJuQo_RJnnnFs9Ea_DO2TJRYKvBoCExEQAvD_BwE; _ga_2ZG3QLQQC9=GS1.1.1714634578.1.1.1714634620.0.0.0; _ga=GA1.1.1700951181.1634046648; _ff_ds=0924728001714634707-78824B69BDD8-AEDEE4CE0931; _ga_89XHHLE6WS=GS1.1.1714635017.1.1.1714635161.0.0.0; _ga_T749QGK6MQ=GS1.1.1714634623.1.1.1714636396.0.0.0; HitsFromTieup=23531; wExp=N; TieupFromTMS=105; bm_mi=6EC771C33ECC3872D0F4947E51845580~YAAQncEzuIzdt0+PAQAAom8XWxcKyaOjKVlBH809Ywr4xrrmxiqQebyUIPK6OaUVg/iX4FywTpNmg48HDsyhKv/vl4JYgXOWK3SrxDhTro4MH5gxwV8EdO8Zze0Ob/4PtfEdXHCaoId4Vqic6/aW63ObrJy85/oy+V8ADaGxpqrbPUP3l5mqmAb+i2WO0aPRIIj3i9bAWyA/e2vMIRY1CDU9f6yv1sqkTxnkTLWI2uyyowzAPozR4mBzJJcT8ToP4dpAtiYYX148Vvq5zcYPqfCODE/uQEANX6Jz66MU27yFEatQIrC6/lfd2ij1aHWFi09QS6l/OsbbauIXP9rggao7YKwKTI8R~1; ak_bmsc=520A4619BEC3C4204B5AE6E4718C28DC~000000000000000000000000000000~YAAQncEzuMDdt0+PAQAAMXcXWxcDXBr5lR6wXhoNddUumfcmZ+6Rod78jpW6qx34qhcVZqystsHpRBseS+NiZrXZIDf8N0L7OT/rfZwLRQgecwhtxQePi+EiYvPb8aBSuIj3uDCWOSoQF+GaZ+tIYo9jwgjm/3dImj4c+e3/ehhM9cvSxyK1RTfaqlRCi6L+WukHippl9HO/RzEP8G3ayHeOEZoGLDFC5nX/UF7B7aqoJtIHjrAaP63VN/XHQOFVh09wGRDCzJTPnnTLlBrPTI5d5Qda1o2Jbl2mn8m9kv+z75oswOQIwBtUs2LKNlE8flZYM9kuix/2WLGf1uswMND87BJ8CJ4tl1tHl6EsIZdv914HfFBbmiMnIk1RDz1RtdO7I43F4dNi2YICqqQhjzMk+Y8L26LWAGqshscMrERvwWhb4XCG4tUBkAhTAbPOaRiCT6xGgPC1WA11nBdcGaVi/EN+pBfmAsOEIh4h/oXOuc3v85CiCt3JI2r0tztnDRV+b7gps/UfnA==; MYNAUKRI[UNID]=417451f1419d433182f7cbde3225f67a; NKWAP=a84fe4e1c76842947aa97edaa4551613ba1f08aaf08f4b09e5949f68180c310ba17faea29e95a5a4~a84fe4e1c76842947aa97edaa4551613ba1f08aaf08f4b09e5949f68180c310ba17faea29e95a5a4~1~0; nauk_at=eyJraWQiOiIxIiwidHlwIjoiSldUIiwiYWxnIjoiUlM1MTIifQ.eyJkZXZpY2VUeXBlIjoiZDNza3QwcCIsInVkX3Jlc0lkIjoyNjg1ODQ0NTQsInN1YiI6IjI3OTYzNjMyOCIsInVkX3VzZXJuYW1lIjoidmVsbGllc0B5b3BtYWlsLmNvbSIsInVkX2lzRW1haWwiOnRydWUsImlzcyI6IkluZm9FZGdlIEluZGlhIFB2dC4gTHRkLiIsInVzZXJBZ2VudCI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMjQuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImlwQWRyZXNzIjoiMTcyLjEwLjIyMS45NSIsInVkX2lzVGVjaE9wc0xvZ2luIjpmYWxzZSwidXNlcklkIjoyNzk2MzYzMjgsInN1YlVzZXJUeXBlIjoiam9ic2Vla2VyIiwidXNlclN0YXRlIjoiQVVUSEVOVElDQVRFRCIsInVkX2lzUGFpZENsaWVudCI6ZmFsc2UsInVkX2VtYWlsVmVyaWZpZWQiOmZhbHNlLCJ1c2VyVHlwZSI6ImpvYnNlZWtlciIsInNlc3Npb25TdGF0VGltZSI6IjIwMjQtMDUtMDlUMDc6MzQ6MTEiLCJ1ZF9lbWFpbCI6InZlbGxpZXNAeW9wbWFpbC5jb20iLCJ1c2VyUm9sZSI6InVzZXIiLCJleHAiOjE3MTUyMjM4NTEsInRva2VuVHlwZSI6ImFjY2Vzc1Rva2VuIiwiaWF0IjoxNzE1MjIwMjUxLCJqdGkiOiJkYzFhOWQzYzEwM2Y0MzE3OTlmNDQzMGI0NjdmNGNlNiJ9.bFQQfF9hvc08P7JSb5Nn3KYOlz6Ai2W4rf3V_pbTq3x7445G-1UwSETrAIQAmiArz15F3r_PHOCxMvmcAbXXz2vwtOylxucytfx6ZrXu6DWkVDkQlyFtJ3-S0YYSxro8Llvr-XSgoljJDoCpYA2p9I2Vm8m_9bMI0h5qJIqzTIs2kiOWt_MiqYYVtbeEvpfuYdlZIhl61_s6g2rxsI83F1HsqVxIy06wZ3pebJ1oXspubP8C4Pu62UNDvnsqvNyvPqTfpvaMbvk2BlxrWvfOWurqsrYEv6T4O2gPqJoby7UT0ajaSQYO9EM1aFxaIFkKqn5FGrVX7E8hkbD9jyC2QA; nauk_rt=eyJraWQiOiIxIiwidHlwIjoiSldUIiwiYWxnIjoiUlM1MTIifQ.eyJkZXZpY2VUeXBlIjoiZDNza3QwcCIsInVkX3Jlc0lkIjoyNjg1ODQ0NTQsInN1YiI6IjI3OTYzNjMyOCIsInVkX3VzZXJuYW1lIjoidmVsbGllc0B5b3BtYWlsLmNvbSIsInVkX2lzRW1haWwiOnRydWUsImlzcyI6IkluZm9FZGdlIEluZGlhIFB2dC4gTHRkLiIsInVzZXJBZ2VudCI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMjQuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImlwQWRyZXNzIjoiMTcyLjEwLjIyMS45NSIsInVkX2lzVGVjaE9wc0xvZ2luIjpmYWxzZSwidXNlcklkIjoyNzk2MzYzMjgsInN1YlVzZXJUeXBlIjoiam9ic2Vla2VyIiwidXNlclN0YXRlIjoiQVVUSEVOVElDQVRFRCIsInVkX2lzUGFpZENsaWVudCI6ZmFsc2UsInVkX2VtYWlsVmVyaWZpZWQiOmZhbHNlLCJ1c2VyVHlwZSI6ImpvYnNlZWtlciIsInNlc3Npb25TdGF0VGltZSI6IjIwMjQtMDUtMDlUMDc6MzQ6MTEiLCJ1ZF9lbWFpbCI6InZlbGxpZXNAeW9wbWFpbC5jb20iLCJ1c2VyUm9sZSI6InVzZXIiLCJleHAiOjE3NDY3NTYyNTEsInRva2VuVHlwZSI6InJlZnJlc2hUb2tlbiIsImlhdCI6MTcxNTIyMDI1MSwianRpIjoiZGMxYTlkM2MxMDNmNDMxNzk5ZjQ0MzBiNDY3ZjRjZTYifQ.r74_UYEHXeAy6IuhuiYoyLx_hnShKaBdqu2lynCMqqOT32HevqiYOAjbY_VntaM470FeRYmLao-4ejI_FwrvtO19Qww-zyTxk-amF_L5tlUFP8Xpyo9JLU-Exv322uY1-rxCo-C29I958l3H1kAraA2M8ZuFQYoK_CPV07VwNEX4OdE6QYSXlRExLwLUmTjXg7n3uvZPN1MACtoJQSf4ZEZjFx_T7rhADuE0jF8HnqVr1id-qlPnBF63Af2A7yORfVcU6Z9WYbxxS5iFnlV3CTrO90M63YyQA7rOlvE09yX5ySUgB2ncfQfRkp4zGeGkXOYLE3b6AU2ivx2oDs3mfA; nauk_otl=dc1a9d3c103f431799f4430b467f4ce6; nauk_sid=dc1a9d3c103f431799f4430b467f4ce6; _gcl_au=1.1.734330351.1714634623.1673041639.1715220457.1715220457; nauk_ps=default; bm_sv=F8BA90956952B4EC902DD27B422871F0~YAAQncEzuIgSuE+PAQAAOaoeWxd4uaNMb2u/VEFUa+qk9cNgNnRHKuUJud0ylYRGZgpmezUlbgZ5hu8xt4yUHJQAMdSBd5kGb9C+r9Q+/2RdKWCsJzZiL3jcHW4vWg7xERV2ZDsJC3M1Zn3YxFpQKhZhemrwGaYDIMLp46AhZTt1tNFyL4/UoaimqS8X7T5P2oUO4v7hJSd2TMbjbdNASWhdKwP3x3ggVy+7CrbqTjP4NGSm83opEWRe/0ZT7IHiJw==~1; HOWTORT=ul=1715220669916&r=https%3A%2F%2Fwww.naukri.com%2Fmnjuser%2Fhomepage&hd=1715220670243; _ga_K2YBNZVRLL=GS1.1.1715220198.3.1.1715220670.60.0.0',
+                    'Gid':'LOCATION,INDUSTRY,EDUCATION,FAREA_ROLE',
+                    'Priority':'u=1, i',
+                    'Referer':'https://www.naukri.com/blockchain-developer-jobs-in-coimbatore?k=blockchain%20developer&l=coimbatore&experience=5&nignbevent_src=jobsearchDeskGNB',
+                    'Sec-Ch-Ua':'"Chromium",v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+                    'Sec-Ch-Ua-Mobile':'?0',
+                    'Sec-Ch-Ua-Platform':'Windows',
+                    'Sec-Fetch-Dest':'empty',
+                    'Sec-Fetch-Mode':'no-cors',
+                    'Sec-Fetch-Site':'same-origin',
+                    'Systemid':'Naukri',
+                    'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+                }
+            }
+        )
+            .then(function (response: any) {
+                console.log(response);
+                setData(response?.data)
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
 
     const getLinkedInJob = async () => {
         await axios.post(
