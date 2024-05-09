@@ -217,7 +217,7 @@ export default function LinkedIn() {
 
     useEffect(() => {
         console.log(1111111)
-        // getLinkedInJob()
+        getLinkedInJob()
     }, [data]);
 
     const getLinkedInJob = async () => {
